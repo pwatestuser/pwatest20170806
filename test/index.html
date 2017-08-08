@@ -71,13 +71,13 @@ var registerSubscription = function(subscription){
   }
 };
  
-navigator.serviceWorker.ready.then(function(serviceWorker){
-  serviceWorker.pushManager.getSubscription().then(function(subscription){
-    if(subscription === null){
-      serviceWorker.pushManager.subscribe({userVisibleOnly: true}).then(registerSubscription);
-    }
-  });
-});
+//navigator.serviceWorker.ready.then(function(serviceWorker){
+//  serviceWorker.pushManager.getSubscription().then(function(subscription){
+//    if(subscription === null){
+//      serviceWorker.pushManager.subscribe({userVisibleOnly: true}).then(registerSubscription);
+//    }
+//  });
+//});
 
 //window.addEventListener('load', function() {
 //  if ('serviceWorker' in navigator) {
